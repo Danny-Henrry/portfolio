@@ -12,7 +12,7 @@ html,
 body {
   font-family: 'Space Grotesk', sans-serif;
   color: $white;
-  background-color: $bg-dark;
+  background-color: $dark-matter;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,22 +26,50 @@ body {
 }
 
 section.banner {
+  position: relative;
   display: flex;
   width: 100%;
   min-height: 300px;
   height: 300px;
   justify-content: center;
   align-items: center;
+  background-color: $dark-matter;
 
-  background: url(/assets/grain.gif) no-repeat;
-  mix-blend-mode: screen;
-  background-size: cover;
-  background-position: center center;
-  background-color: black;
-  border-bottom: $border;
+  .container {
+    z-index: 50;
+  }
 
   img.commodore {
     animation: updown 1.5s infinite ease-in-out alternate;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    background: url(/assets/grain.gif) no-repeat;
+    mix-blend-mode: screen;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/designer.png) no-repeat;
+    background-position: center center;
+    background-size: 200px;
+    opacity: 0.2;
   }
 }
 
@@ -49,17 +77,28 @@ section.banner {
   background: $dark-bold;
   width: 100%;
   padding: 10px 0px;
+  overflow: hidden;
+  position: relative;
 
-  p {
-    text-transform: uppercase;
-    color: $gray;
+  div {
+    .scroll {
+      width: 100%;
+      display: flex;
+      white-space: nowrap;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $gray;
+      animation: scroller 15s linear infinite alternate-reverse;
+    }
   }
 }
 
 #grid {
   border-top: $border;
+
   .container {
     display: grid;
+    height: 100%;
     padding: 0px;
     margin: 0px;
     align-content: stretch;
@@ -78,7 +117,7 @@ section.banner {
 
       p {
         margin-top: 12px;
-        font-size: 12px;
+        font-size: 14px;
         color: $gray;
         line-height: 16px;
       }
@@ -103,6 +142,16 @@ section.banner {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .slide__skill {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 60px;
+          }
+        }
       }
     }
 
@@ -129,6 +178,86 @@ section.projetos {
 
       p {
         color: $gray;
+      }
+    }
+
+    .slide__projetos {
+      overflow: hidden;
+      margin-top: 10px;
+    }
+  }
+}
+
+footer#fixed__footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+
+  .corrent__footer {
+    background: $dark-bold;
+    color: $gray;
+    width: 100%;
+    padding: 10px 0px;
+
+    .scroll {
+      width: 100%;
+      display: flex;
+      white-space: nowrap;
+      animation: scroller 20s linear infinite;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+
+    #curriculo {
+      width: 50%;
+      height: 100%;
+      background: $red-vintage;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      p {
+        color: $white;
+        font-weight: 700;
+        font-size: 18px;
+        img {
+          position: relative;
+          top: 2px;
+          width: 13px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    #contato {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $vintage;
+      cursor: pointer;
+
+      p {
+        color: $dark-matter;
+        font-weight: 700;
+        font-size: 18px;
+
+        img {
+          position: relative;
+          top: 2px;
+          width: 18px;
+          margin-right: 10px;
+        }
       }
     }
   }
