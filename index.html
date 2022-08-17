@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>ICI STUDIO</title>
   </head>
   <body>
@@ -160,5 +162,101 @@
         </div>
       </div>
     </footer>
+
+    <div class="container__loading">
+      <div class="loader">loading</div>
+      <div class="overlay">
+        <div class="block block-1"></div>
+        <div class="block block-2"></div>
+        <div class="block block-3"></div>
+        <div class="block block-4"></div>
+        <div class="block block-5"></div>
+        <div class="block block-6"></div>
+        <div class="block block-7"></div>
+        <div class="block block-8"></div>
+        <div class="block block-9"></div>
+        <div class="block block-10"></div>
+        <div class="block block-11"></div>
+        <div class="block block-12"></div>
+        <div class="block block-13"></div>
+        <div class="block block-14"></div>
+        <div class="block block-15"></div>
+        <div class="block block-16"></div>
+        <div class="block block-17"></div>
+        <div class="block block-18"></div>
+        <div class="block block-19"></div>
+        <div class="block block-20"></div>
+      </div>
+    </div>
+
+    <script>
+
+      TweenMax.staggerFrom(".block", 0.8, {
+        width: "5%",
+        ease: Power1.easein,
+        delay: 4,
+      }, 0.04);
+
+      TweenMax.to(".loader", 1, {
+        y: 2,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 1.5,
+      });
+
+      TweenMax.from(".banner", 1,{
+        y: "-200%",
+        ease: Expo.easeInOut,
+        delay: 5
+      });
+
+      TweenMax.from(".corrente", 1,{
+        y: "-10%",
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 5.5,
+      });
+
+      TweenMax.from(".bio", 2,{
+        x: "-100%",
+        ease: Expo.easeInOut,
+        delay: 6,
+      });
+
+      TweenMax.from(".icon__weight", 2,{
+        x: "100%",
+        ease: Expo.easeInOut,
+        delay: 6,
+      });
+
+      TweenMax.from(".skills", 2,{
+        x: "100%",
+        ease: Expo.easeInOut,
+        delay: 6,
+      });
+
+      TweenMax.from(".projetos", 2.5,{
+        y: "100%",
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 7,
+      });
+
+      TweenMax.from(".contato", 2.5,{
+        y: "100%",
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 7.5,
+      });
+
+      TweenMax.from("footer", 2,{
+        y: "100%",
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 8,
+      });
+
+    </script>
+
   </body>
 </html>

@@ -1,49 +1,48 @@
-@keyframes updown{
-  from{
+@keyframes updown {
+  from {
     transform: translateY(0px);
   }
 
-  to{
+  to {
     transform: translateY(-20px);
   }
 }
 
-@keyframes scroller{
-  0%{
+@keyframes scroller {
+  0% {
     transform: translateX(0%);
   }
-  100%{
+  100% {
     transform: translateX(-100%);
   }
 }
 
-@keyframes front_icon{
-  0%{
+@keyframes front_icon {
+  0% {
     left: 0px;
   }
 
-  25%{
+  25% {
     left: 0px;
   }
 
-  33%{
+  33% {
     left: -70px;
   }
 
-  70%{
+  70% {
     left: -70px;
   }
 
-  80%{
+  80% {
     left: -140px;
   }
 
-  95%{
+  95% {
     left: -140px;
   }
 
-  100%{
+  100% {
     left: 0px;
   }
-
 }
