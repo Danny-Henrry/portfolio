@@ -236,16 +236,20 @@ section.banner::before {
   width: 60px;
 }
 
+section.projetos {
+  border-bottom: 1.5px solid #333333;
+  margin-bottom: 100px;
+}
 section.projetos .container {
-  padding: 10px;
-  margin: 10px;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   flex-direction: column;
-  gap: 12px;
 }
 section.projetos .container .heading {
+  padding: 15px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -255,9 +259,26 @@ section.projetos .container .heading {
 section.projetos .container .heading p {
   color: #8c8c8c;
 }
-section.projetos .container .slide__projetos {
+section.projetos .slide__projetos {
   overflow: hidden;
-  margin-top: 10px;
+  margin-bottom: 15px;
+}
+section.projetos .slide__projetos .wrapper__slide {
+  width: 100%;
+  overflow-x: scroll;
+  height: 100px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+section.projetos .slide__projetos .wrapper__slide::-webkit-scrollbar {
+  display: none;
+}
+section.projetos .slide__projetos .wrapper__slide img {
+  margin-right: 10px;
+}
+section.projetos .slide__projetos .wrapper__slide img:first-child {
+  margin-left: 15px;
 }
 
 footer#fixed__footer {
