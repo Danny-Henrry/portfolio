@@ -52,7 +52,7 @@ section.banner {
     top: 0px;
     left: 0px;
     display: inline-block;
-    background: url("../assets/grain.gif") no-repeat;
+    background: url('../assets/grain.gif') no-repeat;
     mix-blend-mode: screen;
     background-size: cover;
     background-position: center center;
@@ -66,7 +66,7 @@ section.banner {
     z-index: 10;
     width: 100%;
     height: 100%;
-    background: url("../assets/designer.png") no-repeat;
+    background: url('../assets/designer.png') no-repeat;
     background-position: center center;
     background-size: 200px;
     opacity: 0.2;
@@ -95,6 +95,7 @@ section.banner {
 
 #grid {
   border-top: $border;
+  min-height: 175px;
 
   .container {
     display: grid;
@@ -116,17 +117,18 @@ section.banner {
       }
 
       p {
+        max-width: 260px;
         margin-top: 12px;
-        font-size: 14px;
+        font-size: 13px;
         color: $gray;
-        line-height: 16px;
+        line-height: 18px;
       }
     }
 
     .right__icons {
       grid-area: icons;
       align-items: stretch;
-      min-width: 100px;
+      min-width: 80px;
 
       .icon__weight {
         height: 50%;
@@ -137,7 +139,6 @@ section.banner {
       }
 
       .skills {
-        
         height: 50%;
         border-bottom: $border;
         display: flex;
@@ -145,12 +146,28 @@ section.banner {
         justify-content: center;
 
         .slide__skill {
+          position: relative;
           display: flex;
           align-items: center;
           justify-content: center;
+          width: 60px;
+          height: 60px;
+          overflow: hidden;
 
-          img {
-            width: 60px;
+          .icons{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            left: 0px;
+            overflow: hidden;
+
+            animation: front_icon 10s cubic-bezier(.58,-0.51,.3,1.45) infinite;
+
+            img {
+              margin-right: 10px;
+              width: 60px;
+            }
           }
         }
       }
@@ -202,10 +219,10 @@ footer#fixed__footer {
     padding: 10px 0px;
 
     .scroll {
-      width: 100%;
       display: flex;
       white-space: nowrap;
       animation: scroller 20s linear infinite alternate;
+      font-size: 12px;
     }
   }
 
@@ -227,7 +244,6 @@ footer#fixed__footer {
       cursor: pointer;
 
       p {
-        width: 100%;
         color: $white;
         font-weight: 700;
         font-size: 18px;

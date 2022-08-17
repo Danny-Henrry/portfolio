@@ -16,3 +16,34 @@
     transform: translateX(-100%);
   }
 }
+
+@keyframes front_icon{
+  0%{
+    left: 0px;
+  }
+
+  25%{
+    left: 0px;
+  }
+
+  33%{
+    left: -70px;
+  }
+
+  70%{
+    left: -70px;
+  }
+
+  80%{
+    left: -140px;
+  }
+
+  95%{
+    left: -140px;
+  }
+
+  100%{
+    left: 0px;
+  }
+
+}
