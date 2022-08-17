@@ -238,7 +238,6 @@ section.banner::before {
 
 section.projetos {
   border-bottom: 1.5px solid #333333;
-  margin-bottom: 100px;
 }
 section.projetos .container {
   padding: 0px;
@@ -281,11 +280,60 @@ section.projetos .slide__projetos .wrapper__slide img:first-child {
   margin-left: 15px;
 }
 
+.contato {
+  padding: 200px 15px 100px 15px;
+  background: url("../assets/Commodore_PET_BG.jpg") no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+.contato .container {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+.contato .container::after {
+  content: "CONTATO";
+  color: #ecf7c5;
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  top: -60%;
+  left: 40%;
+}
+.contato .container .grid_contato {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.contato .container a {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  background-color: #1a1a1a;
+  padding: 15px 0px;
+  border: 1.5px solid #ea5656;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.contato .container a img {
+  width: 20px;
+  vertical-align: -2px;
+}
+.contato .container a p {
+  display: inline-block;
+  vertical-align: 2px;
+  color: #8c8c8c;
+  margin-left: 10px;
+}
+
 footer#fixed__footer {
   position: fixed;
   bottom: 0px;
   left: 0px;
   width: 100%;
+  z-index: 1000;
 }
 footer#fixed__footer .corrent__footer {
   background: #333333;
@@ -324,7 +372,7 @@ footer#fixed__footer .buttons #curriculo p {
 }
 footer#fixed__footer .buttons #curriculo p img {
   position: relative;
-  top: 2px;
+  top: 1px;
   width: 13px;
   margin-right: 10px;
 }
@@ -344,7 +392,7 @@ footer#fixed__footer .buttons #contato p {
 }
 footer#fixed__footer .buttons #contato p img {
   position: relative;
-  top: 2px;
+  top: 1px;
   width: 18px;
   margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
