@@ -197,7 +197,8 @@ section.banner {
 
 section.projetos {
   border-bottom: $border;
-
+  width: 100%;
+  
   .container {
     padding: 0px;
     margin: 0px;
@@ -221,7 +222,8 @@ section.projetos {
   }
 
   .slide__projetos {
-    overflow: hidden;
+    width: 100%;
+    overflow-x: scroll;
     margin-bottom: 15px;
 
     .wrapper__slide {

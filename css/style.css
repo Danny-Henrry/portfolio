@@ -255,6 +255,7 @@ section.banner::before {
 
 section.projetos {
   border-bottom: 1.5px solid #333333;
+  width: 100%;
 }
 section.projetos .container {
   padding: 0px;
@@ -276,7 +277,8 @@ section.projetos .container .heading p {
   color: #8c8c8c;
 }
 section.projetos .slide__projetos {
-  overflow: hidden;
+  width: 100%;
+  overflow-x: scroll;
   margin-bottom: 15px;
 }
 section.projetos .slide__projetos .wrapper__slide {
