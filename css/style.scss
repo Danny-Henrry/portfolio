@@ -112,6 +112,7 @@ section.banner {
 #grid {
   border-top: $border;
   min-height: 175px;
+  overflow: hidden;
 
   .container {
     display: grid;

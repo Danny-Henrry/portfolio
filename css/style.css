@@ -182,6 +182,7 @@ section.banner::before {
 #grid {
   border-top: 1.5px solid #333333;
   min-height: 175px;
+  overflow: hidden;
 }
 #grid .container {
   display: grid;
