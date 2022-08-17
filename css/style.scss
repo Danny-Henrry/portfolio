@@ -44,7 +44,18 @@ section.banner {
   }
 
   img.commodore {
+    position: relative;
     animation: updown 1.5s infinite ease-in-out alternate;
+
+    &::after{
+      content: "Site em construção/manutenção!";
+      color: $white;
+      position: relative;
+      top: 0;
+      left: 0;
+      font-size: 12px;
+    }
+
   }
 
   &::after {
