@@ -101,6 +101,10 @@ body {
   max-width: 1200px;
 }
 
+a {
+  text-decoration: none;
+}
+
 section.banner {
   position: relative;
   display: flex;
