@@ -25,18 +25,18 @@
 }
 @-webkit-keyframes scroller {
   0% {
-    transform: translateX(0%);
+    right: 0;
   }
   100% {
-    transform: translateX(-100%);
+    right: 100%;
   }
 }
 @keyframes scroller {
   0% {
-    transform: translateX(0%);
+    right: 0;
   }
   100% {
-    transform: translateX(-100%);
+    right: 100%;
   }
 }
 @-webkit-keyframes front_icon {
@@ -168,15 +168,27 @@ section.banner::before {
   padding: 10px 0px;
   overflow: hidden;
   position: relative;
-}
-.corrente div .scroll {
-  width: 100%;
   display: flex;
+  align-items: center;
+}
+.corrente .scroll {
+  vertical-align: middle;
+  display: flex;
+  position: relative;
   white-space: nowrap;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #8c8c8c;
-  animation: scroller 15s linear infinite alternate-reverse;
+  -webkit-animation: scroller 30s linear infinite alternate;
+          animation: scroller 30s linear infinite alternate;
+  font-size: 0.7rem;
+}
+.corrente .scroll span {
+  font-weight: 400;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 #grid {
@@ -363,9 +375,9 @@ footer#fixed__footer .corrent__footer {
 footer#fixed__footer .corrent__footer .scroll {
   display: flex;
   white-space: nowrap;
-  -webkit-animation: scroller 20s linear infinite alternate;
-          animation: scroller 20s linear infinite alternate;
+  animation: scroller 60s linear infinite alternate-reverse;
   font-size: 12px;
+  position: relative;
 }
 footer#fixed__footer .buttons {
   display: flex;

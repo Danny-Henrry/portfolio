@@ -95,18 +95,29 @@ section.banner {
   padding: 10px 0px;
   overflow: hidden;
   position: relative;
-
-  div {
+  display: flex;
+  align-items: center;
+  
     .scroll {
-      width: 100%;
+      vertical-align: middle;
       display: flex;
+      position: relative;
       white-space: nowrap;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: $gray;
-      animation: scroller 15s linear infinite alternate-reverse;
+      animation: scroller 30s linear infinite alternate;
+      font-size: .7rem;
+
+      span{
+        font-weight: 400;
+        letter-spacing: 2px;
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+
     }
-  }
 }
 
 #grid {
@@ -319,8 +330,9 @@ footer#fixed__footer {
     .scroll {
       display: flex;
       white-space: nowrap;
-      animation: scroller 20s linear infinite alternate;
+      animation: scroller 60s linear infinite alternate-reverse;
       font-size: 12px;
+      position: relative;
     }
   }
 
