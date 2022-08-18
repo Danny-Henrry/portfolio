@@ -46,3 +46,33 @@
     left: 0px;
   }
 }
+
+@keyframes skill__slide {
+  0% {
+    top: 0px;
+  }
+
+  25% {
+    top: 0px;
+  }
+
+  33% {
+    top: -20px;
+  }
+
+  63% {
+    top: -20px;
+  }
+
+  80% {
+    top: -40px;
+  }
+
+  90% {
+    top: -40px;
+  }
+
+  100% {
+    top: -60px;
+  }
+}

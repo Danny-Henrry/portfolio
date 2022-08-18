@@ -84,8 +84,42 @@ section.banner {
     height: 100%;
     background: url('../assets/designer.png') no-repeat;
     background-position: center center;
-    background-size: 200px;
+    background-size: 220px;
     opacity: 0.2;
+  }
+
+  .skill__display {
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translatex(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 20px;
+
+    p {
+      position: relative;
+      vertical-align: text-top;
+      white-space: nowrap;
+      font-size: 16px;
+      color: $white;
+      opacity: 0.5;
+    }
+
+    .slide_skill_text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: 20px;
+      position: relative;
+      animation: skill__slide 7s cubic-bezier(0.22, 0.68, 0, 1.71) infinite;
+    }
   }
 }
 
@@ -97,27 +131,26 @@ section.banner {
   position: relative;
   display: flex;
   align-items: center;
-  
-    .scroll {
-      vertical-align: middle;
-      display: flex;
-      position: relative;
-      white-space: nowrap;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: $gray;
-      animation: scroller 30s linear infinite alternate;
-      font-size: .7rem;
 
-      span{
-        font-weight: 400;
-        letter-spacing: 2px;
-        display: inline-block;
-        margin-right: 5px;
-        margin-left: 5px;
-      }
+  .scroll {
+    vertical-align: middle;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $gray;
+    animation: scroller 30s linear infinite alternate;
+    font-size: 0.7rem;
 
+    span {
+      font-weight: 400;
+      letter-spacing: 2px;
+      display: inline-block;
+      margin-right: 5px;
+      margin-left: 5px;
     }
+  }
 }
 
 #grid {
@@ -209,7 +242,7 @@ section.banner {
 section.projetos {
   border-bottom: $border;
   width: 100%;
-  
+
   .container {
     padding: 0px;
     margin: 0px;
@@ -391,7 +424,7 @@ footer#fixed__footer {
   }
 }
 
-.container__loading{
+.container__loading {
   width: 100vw;
   position: fixed;
   z-index: 10000;
@@ -400,7 +433,7 @@ footer#fixed__footer {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

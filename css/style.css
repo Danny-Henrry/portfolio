@@ -85,6 +85,52 @@
     left: 0px;
   }
 }
+@-webkit-keyframes skill__slide {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 0px;
+  }
+  33% {
+    top: -20px;
+  }
+  63% {
+    top: -20px;
+  }
+  80% {
+    top: -40px;
+  }
+  90% {
+    top: -40px;
+  }
+  100% {
+    top: -60px;
+  }
+}
+@keyframes skill__slide {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 0px;
+  }
+  33% {
+    top: -20px;
+  }
+  63% {
+    top: -20px;
+  }
+  80% {
+    top: -40px;
+  }
+  90% {
+    top: -40px;
+  }
+  100% {
+    top: -60px;
+  }
+}
 html,
 body {
   width: 100vw;
@@ -158,8 +204,40 @@ section.banner::before {
   height: 100%;
   background: url("../assets/designer.png") no-repeat;
   background-position: center center;
-  background-size: 200px;
+  background-size: 220px;
   opacity: 0.2;
+}
+section.banner .skill__display {
+  width: 100%;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translatex(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 20px;
+}
+section.banner .skill__display p {
+  position: relative;
+  vertical-align: text-top;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #f2f2f2;
+  opacity: 0.5;
+}
+section.banner .skill__display .slide_skill_text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 20px;
+  position: relative;
+  -webkit-animation: skill__slide 7s cubic-bezier(0.22, 0.68, 0, 1.71) infinite;
+          animation: skill__slide 7s cubic-bezier(0.22, 0.68, 0, 1.71) infinite;
 }
 
 .corrente {
@@ -437,7 +515,7 @@ footer#fixed__footer .buttons #contato p img {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
