@@ -68,10 +68,11 @@ section.banner {
     top: 0px;
     left: 0px;
     display: inline-block;
+    opacity: 0.15;
     background: url('../assets/grain.gif') no-repeat;
     mix-blend-mode: screen;
     background-size: cover;
-    background-position: center center;
+    background-position: center 100%;
     background-color: black;
   }
 
