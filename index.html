@@ -194,18 +194,19 @@
 
     <script>
 
-      TweenMax.staggerFrom(".block", 0.8, {
-        width: "5%",
+      TweenMax.staggerTo(".block", 0.8, {
+        width: "0%",
         ease: Power1.easein,
         delay: 4,
       }, 0.04);
 
       TweenMax.to(".loader", 1, {
-        y: 2,
+        y: 50,
         opacity: 0,
         ease: Expo.easeInOut,
         delay: 1.5,
       });
+
 
       TweenMax.to(".overlay", 0.8, {
         width: "0%",

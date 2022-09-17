@@ -440,7 +440,7 @@ footer#fixed__footer {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 10vw;
+  font-size: 32px;
   z-index: 2000;
 }
 
@@ -451,87 +451,88 @@ footer#fixed__footer {
 
 .block {
   position: fixed;
-  width: 0%;
+  right: 0;
+  width: 5%;
   height: 100vh;
   background-color: $red-vintage;
 }
 
-.block-1 {
-  left: 0;
-}
-
-.block-2 {
-  left: 5%;
-}
-
-.block-3 {
-  left: 10%;
-}
-
-.block-4 {
-  left: 15%;
-}
-
-.block-5 {
-  left: 20%;
-}
-
-.block-6 {
-  left: 25%;
-}
-
-.block-7 {
-  left: 30%;
-}
-
-.block-8 {
-  left: 35%;
-}
-
-.block-9 {
-  left: 40%;
-}
-
-.block-10 {
-  left: 45%;
-}
-
-.block-11 {
-  left: 50%;
-}
-
-.block-12 {
-  left: 55%;
-}
-
-.block-13 {
-  left: 60%;
-}
-
-.block-14 {
-  left: 65%;
-}
-
-.block-15 {
-  left: 70%;
-}
-
-.block-16 {
-  left: 75%;
-}
-
-.block-17 {
-  left: 80%;
-}
-
-.block-18 {
-  left: 85%;
+.block-20 {
+  right: 0;
 }
 
 .block-19 {
-  left: 90%;
+  right: 5%;
 }
 
-.block-20 {
-  left: 95%;
+.block-18 {
+  right: 10%;
+}
+
+.block-17 {
+  right: 15%;
+}
+
+.block-16 {
+  right: 20%;
+}
+
+.block-15 {
+  right: 25%;
+}
+
+.block-14 {
+  right: 30%;
+}
+
+.block-13 {
+  right: 35%;
+}
+
+.block-12 {
+  right: 40%;
+}
+
+.block-11 {
+  right: 45%;
+}
+
+.block-10 {
+  right: 50%;
+}
+
+.block-9 {
+  right: 55%;
+}
+
+.block-8 {
+  right: 60%;
+}
+
+.block-7 {
+  right: 65%;
+}
+
+.block-6 {
+  right: 70%;
+}
+
+.block-5 {
+  right: 75%;
+}
+
+.block-4 {
+  right: 80%;
+}
+
+.block-3 {
+  right: 85%;
+}
+
+.block-2 {
+  right: 90%;
+}
+
+.block-1 {
+  right: 95%;
 }
