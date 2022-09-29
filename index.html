@@ -144,38 +144,46 @@
             <h4>Projetos e Experiências</h4>
           </div>
           <div class="caminho">
-            <a class="midWaves" href="">
+
+            <a class="calin" href="https://www.instagram.com/p/CfR7RBKuL6m/?utm_source=ig_web_copy_link">
+              <div class="top">
+                <h3>Calin</h3>
+                <img src="./assets/Projetos/Calin.jpg" alt="Calin" />
+              </div>
+            </a>
+
+            <a class="chat" href="https://www.behance.net/gallery/149448403/CHAT-Block-%28Identidade-Visual%29">
+              <div class="top">
+                <h3>Calin</h3>
+                <img src="./assets/Projetos/chat.jpg" alt="Chat Block - Identidade Visual" />
+              </div>
+            </a>
+
+            <a class="midWaves" href="https://www.behance.net/gallery/146683311/MID-WAVES-Local-Player-Music-Prototype">
               <div class="top">
                 <h3>Mid Waves</h3>
                 <img src="./assets/Projetos/MIDWave.jpg" alt="Mid Waves" />
               </div>
             </a>
 
-            <a class="lazy" href="">
+            <a class="lazy" href="https://www.behance.net/gallery/150182867/LAZY-%28Identidade-Visual%29">
               <div class="top">
                 <h3>LAZY</h3>
                 <img src="./assets/Projetos/MoodBoard-Lzy.jpg" alt="LAZY" />
               </div>
             </a>
 
-            <a class="theWave" href="">
+            <a class="theWave" href="https://www.instagram.com/p/CbDdQDPrQVY/?utm_source=ig_web_copy_link">
               <div class="top">
                 <h3>The Wave</h3>
                 <img src="./assets/Projetos/TheWave.jpg" alt="The Wave" />
               </div>
             </a>
 
-            <a class="hermes" href="">
+            <a class="hermes" href="https://www.behance.net/gallery/147473781/HERMES-AI-DASHBOARD">
               <div class="top">
                 <h3>HERMES</h3>
                 <img src="./assets/Projetos/Dashrmes.jpg" alt="HERMES" />
-              </div>
-            </a>
-
-            <a class="calin" href="">
-              <div class="top">
-                <h3>Calin</h3>
-                <img src="./assets/Projetos/Calin.jpg" alt="Calin" />
               </div>
             </a>
           </div>
@@ -261,6 +269,16 @@
 
     <script>
       gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".chat", {
+        scrollTrigger: {
+          trigger: ".chat",
+          toggleActions: "play"
+        },
+        y: 100,
+        opacity: 0,
+        duration: 1.5
+      });
 
       gsap.from(".midWaves", {
         scrollTrigger: {
