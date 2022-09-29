@@ -22,12 +22,12 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 10px;
-  margin: 15px;
+  padding: 5px;
+  margin: 10px;
   max-width: 1200px;
 }
 
-#desktop-none{
+#desktop-none {
   display: none;
 }
 
@@ -38,6 +38,34 @@ main {
 
 a {
   text-decoration: none;
+  color: inherit;
+  background: none;
+}
+a:link {
+  text-decoration: none;
+  color: none;
+  background: none;
+}
+a:visited {
+  text-decoration: none;
+  color: none;
+  background: none;
+}
+a:hover {
+  text-decoration: none;
+  color: none;
+  background: none;
+}
+a:active {
+  text-decoration: none;
+  color: none;
+  background: none;
+}
+
+a:focus {
+  text-decoration: none;
+  color: none;
+  background: none;
 }
 
 section.banner {
@@ -303,6 +331,69 @@ section.projetos {
   }
 }
 
+section#projetos {
+  width: 100%;
+  position: relative;
+
+  .titulo_projetos {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .caminho {
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+
+    a {
+      margin-bottom: 20px;
+      display: inline-block;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+        width: 100%;
+        position: relative;
+        // display: flex;
+        // flex-direction: row;
+        // align-items: flex-end;
+        // justify-content: flex-end;
+
+        h3 {
+          display: none;
+          font-size: 2rem;
+          font-weight: 300;
+          letter-spacing: 10px;
+          position: absolute;
+          top: 50%;
+          z-index: 2;
+          transform: translateY(-50%);
+          transition: 2s;
+        }
+
+        img {
+          width: 100%;
+          filter: grayscale(100%) brightness(0.5);
+          position: relative;
+          transition: 2s;
+
+          &:hover {
+            filter: grayscale(0%) brightness(100%);
+          }
+        }
+      }
+    }
+  }
+}
+
 .contato {
   padding: 200px 15px 100px 15px;
   background: url('../assets/Commodore_PET_BG.jpg') no-repeat;
@@ -341,6 +432,13 @@ section.projetos {
       border: 1.5px solid $red-vintage;
       border-radius: 10px;
       margin-bottom: 15px;
+
+      &:active {
+        color: none;
+      }
+      &:active {
+        color: red;
+      }
 
       img {
         width: 20px;
@@ -447,8 +545,8 @@ footer#fixed__footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    .bg-mark{
+
+    .bg-mark {
       margin-bottom: 10px;
       animation: updown 1.5s infinite ease-in-out alternate;
     }
@@ -458,7 +556,6 @@ footer#fixed__footer {
       width: 60%;
       text-align: center;
     }
-
   }
 }
 
