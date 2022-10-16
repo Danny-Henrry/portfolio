@@ -10,7 +10,7 @@
 
 @keyframes scroller {
   0% {
-    right: 0;
+    right: 0%;
   }
   100% {
     right: 100%;
@@ -74,5 +74,14 @@
 
   100% {
     top: -60px;
+  }
+}
+
+@keyframes rotacion {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
   }
 }

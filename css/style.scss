@@ -334,11 +334,10 @@ section.projetos {
 section#projetos {
   width: 100%;
   position: relative;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 
   .titulo_projetos {
     width: 100%;
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -533,14 +532,32 @@ footer#fixed__footer {
   }
 }
 
-#socials__Bar{
+#socials__bar{
   width: 100%;
   position: fixed;
   bottom: 0px;
   background: $dark-matter;
-  border-top: $border;
-  border-color: $red-vintage;
 
+  .corrent__bar {
+    background: $dark-bold;
+    color: $gray;
+    padding: 10px 0px;
+    
+    .scroll {
+      position: relative;
+      display: flex;
+      white-space: nowrap;
+      animation: scroller 60s linear infinite alternate;
+      font-size: 12px;
+    }
+    
+    img{
+      width: 12px;
+      display: inline;
+      vertical-align: -2px;
+      animation: rotacion 4s linear infinite forwards;
+    }
+  }
   .container{
     display: flex;
     flex-direction: row;
@@ -559,12 +576,6 @@ footer#fixed__footer {
       li{
         display: inline-block;
         padding: 0px 20px;
-
-        p{
-          font-size: 12px;
-          color: $gray;
-          line-height: 16px;
-        }
 
         a{
            img{
